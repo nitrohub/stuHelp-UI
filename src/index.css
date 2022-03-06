@@ -1,0 +1,264 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+ul{
+  list-style-type: none;
+}
+
+img{
+  max-width: 100%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #a82ccc;
+}
+
+.header .links{
+  margin: 0 10px;
+  text-decoration: none;
+  color:#fff;
+}
+
+.showcase{
+  background: url('./assets/Website.png') no-repeat center/cover;
+  height:100vh
+}
+
+.showcase .overlay{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color:#fff;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.showcase .overlay h1{
+  font-size: 36px;
+  padding-bottom:20px; 
+}
+
+.grid{
+  padding : 50px;
+  /* display: grid;
+  grid-template-columns: lfr lfr; */
+}
+
+.grid h3{
+  text-align: center;
+  font-size:30px;
+  color:#333;
+  padding-bottom:20px;
+}
+
+.footer{
+  background-color: #333;
+  padding:30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer a{
+  text-decoration: none;
+  color:rgb(206, 200, 200);
+}
+
+.footer a:hover{
+  text-decoration: none;
+  color:#fff;
+}
+
+.footer ul li{
+  margin : 10px 0;
+}
+
+.footer ul li button{
+  background-color: transparent;
+  color:#fff;
+  padding:8px;
+  border:none;
+  cursor:pointer;
+  font-family: inherit;
+  letter-spacing: 1px;
+  border-radius:5px;
+  transition:background-color 0.4s ease-in-out 0.4s;
+}
+
+.footer ul li button:hover{
+  background-color:#1e427c;
+}
+
+@media (min-width:768px){
+  .showcase .overlay h1{
+     font-size: 64px;
+  }
+
+  .showcase .overlay p{
+    font-size: 22px;
+  }
+
+  .grid .grid-items{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:30px;
+  }
+
+  .grid .grid-items div img{
+    height: 150px;
+    width: 300px;
+  }
+}
+
+  @media (min-width:992px){
+    .showcase{
+      background-position: top;
+    }
+
+    .grid .grid-items{
+      grid-template-columns: repeat(3 1fr);
+    }
+  }
+
+  .nav-col{
+    background-color: #a82ccc !important;
+    position: sticky;
+    top: 0;
+  }
+
+ .nav-col .nav-link{
+    color: #FFF !important;
+  }
+
+  .navbar-light .navbar-brand {
+    color: #FFF;
+}
+
+.brand:hover{
+  color:#fff !important;
+}
+
+.nav-link:hover{
+ background-color: #5d256b;
+}
+
+.nav-col-scroll{
+  background-color: #a82ccc !important;
+  box-shadow: 2px 2px 2px #5d256b;
+  position: sticky;
+  top: 0;
+  color:#fff !important;
+}
+
+.navbar-light .navbar-nav .nav-link,.navbar-light .navbar-nav .nav-link:hover{
+  color:#fff;
+}
+
+.navbar-brand:hover{
+  background-color: #5d256b;
+}
+
+.sect1{
+  margin-top : 100px;
+}
+
+.showcase p{
+  margin-top : 120px;
+  margin-left : 20px;
+  color:#FFF;
+}
+
+.GetStarted{
+  margin-top: 10px;
+}
+
+.AboutUs p{
+  margin-top : 30px;
+}
+
+#aboutUsImg1{
+  width: 300px;
+  height: 200px;
+  margin-left:100px;
+  /* margin-bottom:20px; */
+}
+
+#aboutUsImg2{
+  width: 300px;
+  height: 200px;
+  margin-right:100px;
+  margin-bottom:20px;
+}
+
+.Appointment{
+  background: url('./assets/courses.png') no-repeat center/cover;
+  height:100vh
+}
+
+.carouImage{
+  width:50px;
+  height:300px;
+  align-items: center;
+  margin-left:21vw;
+  background-color: rgba(0,0,0,0.5);
+  filter: brightness(50%);
+}
+
+.carouImage:hover{
+  filter: brightness(100%);
+}
+
+.navbar{
+  z-index: 2;
+}
+
+.courses{
+  margin-top: -10px;
+}
+
+.Theme{
+  background: url('./assets/courses.png') no-repeat center/cover;
+  height:100vh
+}
+
+.modal-content{
+  margin-top: 100px;
+}
+
+.Theme h1,.Theme h3,.Theme p{
+  text-align: center;
+  color : #fff;
+}
+
+.Content{
+  margin-top: 100px;
+}
+
+.Expert{
+  margin-bottom: 20px;
+}
+
+.jumbotron {
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  background-color: #a82ccc;
+  /* border-radius: .3rem; */
+  text-align: center;
+  color:white;
+}
