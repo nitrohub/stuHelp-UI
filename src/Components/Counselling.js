@@ -11,7 +11,9 @@ class Counselling extends Component{
 
             <>
                 <ThemeBack heading={heading} subHeading={subHeading} message={message} />
-                <Expert />
+
+                {/* Iterating and sending each and every Expert Details over here whenever backend code will be written*/}
+                <Expert name='Rahul Sir' image=''/>
             </>
 
         )

@@ -1,8 +1,4 @@
 import React, { Component } from 'react';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button';
 import ExpertCalender from './ExpertCalender';
 import ExpertInfo from './ExpertInfo';
 
@@ -26,11 +22,15 @@ class Expert extends Component{
 
 
     render(){
+        const name = this.props.name;
+        const image = this.props.image;
+
         return(
             <>
                 <section>
                     {/* mapping of the array of Elements*/}
-                    { this.state.isCalender ? <ExpertCalender /> : <ExpertInfo showCalender={this.showCalender}/>}
+                    {/* { this.state.isCalender ? <ExpertCalender name={name}/> : <ExpertInfo name={name} image={image} showCalender={this.showCalender}/>} */}
+                    <ExpertInfo name={name} image={image} />
                 </section>
             </>
         );
