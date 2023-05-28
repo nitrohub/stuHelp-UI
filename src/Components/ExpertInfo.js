@@ -34,23 +34,20 @@ class ExpertInfo extends Component{
                 <div className="Expert" >
                 <Container>
                     <Row>
-                        <Col xs={12} sm={12} md={6} lg={4}>
-                            <img src={this.props.image} alt="Expert Image" />
+                        <Col xs={12} sm={12} md={6} lg={4} >
+                            <img src={this.props.image}  alt="Expert Image" style={{ height: '300px', width: '300px' }} />
                         </Col>
                         <Col xs={12} sm={12} md={6} lg={8}>
                             <h3>{this.props.name}</h3>
-                            <p>Lorem Adipisicing fugiat commodo velit fugiat dolor ipsum eiusmod esse nisi ullamco. Quis labore ut occaecat in enim dolor sunt ea incididunt ea sunt aliqua mollit dolore. Officia pariatur pariatur quis ad nulla incididunt id amet commodo elit ipsum reprehenderit est tempor. Labore reprehenderit amet sunt ut labore do duis.</p>
+                            <p>{this.props.bio}</p>
                             <Row>
                                 <Col xs={12} sm={12} md={6} lg={6}>
-                                    <Button variant='success' onClick={this.showCalender}>One-to-One</Button>
-                                </Col>
-                                <Col xs={12} sm={12} md={6} lg={6}>
-                                    <Button variant='primary' onClick={this.showCalender}>Group-call</Button>
+                                    <Button variant='success' onClick={this.showCalender}>Book Meeting</Button>
                                 </Col>
                             </Row>
                         </Col>
                     </Row>
-                    {this.state.showCalender? <ModalCalender show={this.state.showCalender} hide={this.hideCalender} />:''}
+                    {this.state.showCalender? <ModalCalender availability={this.props.availability} show={this.state.showCalender} hide={this.hideCalender} />:''}
                 </Container>
                 </div>
             </>
