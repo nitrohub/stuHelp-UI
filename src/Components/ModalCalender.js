@@ -6,7 +6,7 @@
 // --> Updating the Availability of the Professor according to the Booking Done on the Website 
 // --> One-One --> Time slot will be Completely Booked
 // --> Group --> Time Slot will be shown until member limit becomes full
-
+import React from 'react';
 import { Component } from "react";
 import Form from 'react-bootstrap/Form';
 import Modal from 'react-bootstrap/Modal';
@@ -47,10 +47,34 @@ const convertedTime = `${hoursFormatted}:${minutes}`;
 return convertedTime; // Output: "12:30" (in 24-hour format)
   }
 
-  onConfirm(){
-    
+  onConfirm = async (fees,name) => {
+    alert("THsi works!");
+    // const stripe = await this.stripePromise;
+    // const response = await fetch('YOUR_PAYMENT_API_ENDPOINT', {
+    //   method: 'POST',
+    //   headers: {
+    //     'Content-Type': 'application/json',
+    //   },
+    //   body: JSON.stringify({ amount: fees }), // Pass the required payment amount
+    // });
+    // const { clientSecret } = await response.json();
+  
+    // const result = await stripe.confirmCardPayment(clientSecret, {
+    //   payment_method: {
+    //     card: elements.getElement(CardElement), // Pass your card element from the Stripe Elements setup
+    //     billing_details: {
+    //       name: name, // Pass the customer's billing details
+    //     },
+    //   },
+    // });
+  
+    // if (result.error) {
+    //   console.log("Error in Payment");
+    // } else {
+    //   console.log("Payment Succeeded!");
+    //   // Payment succeeded, call GoogleMeet API, schedule the meeting, show success message, etc.
+    // }
   }
-
 
   handleDateChange = (e) => {
     this.setState({ selectedDate: e.target.value });
